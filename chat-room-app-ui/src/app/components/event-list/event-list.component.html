@@ -1,0 +1,70 @@
+<div class="event-list">
+  <div class="filter-section">
+    <form [formGroup]="filterForm" (ngSubmit)="loadEvents()">
+      <mat-form-field>
+        <mat-label>From Date</mat-label>
+        <input matInput [matDatepicker]="fromPicker" formControlName="fromDate">
+        <mat-datepicker-toggle matSuffix [for]="fromPicker"></mat-datepicker-toggle>
+        <mat-datepicker #fromPicker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>To Date</mat-label>
+        <input matInput [matDatepicker]="toPicker" formControlName="toDate">
+        <mat-datepicker-toggle matSuffix [for]="toPicker"></mat-datepicker-toggle>
+        <mat-datepicker #toPicker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Granularity</mat-label>
+        <mat-select formControlName="granularity" (selectionChange)="loadEvents()">
+          <mat-option *ngFor="let granularity of granularities" [value]="granularity">
+            {{granularity | titlecase}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-raised-button color="accent" type="submit">Apply Filters</button>
+      <button mat-raised-button color="warn" type="button" (click)="resetFilters()">Reset Filters</button>
+      <button mat-raised-button color="primary" class="create-event-button" type="button" (click)="openCreateEventDialog()">Create Event</button>
+    </form>
+    
+    <div *ngIf="dateRangeError" class="error-message">
+      From date cannot be after to date
+    </div>
+  </div>
+
+  <div class="events-container">
+    <div *ngIf="isLoading" class="loading">
+      <mat-spinner></mat-spinner>
+    </div>
+
+    <div *ngIf="!isLoading && filterForm.get('granularity')?.value === 'minute'" class="detailed-events">
+      <div *ngFor="let event of events" class="event-item">
+        <div class="timestamp">{{formatTimestamp(event.timestamp)}}</div>
+        <div class="event-content">
+          <span class="username">{{event.username}}</span>
+          <span class="event-type">{{getEventTypeDisplay(event.eventType)}}</span>
+          <span *ngIf="event.eventType === 'highfive'" class="highfive-target">
+            {{event.recipientUsername}}
+          </span>
+          <span *ngIf="event.eventType === 'comment'" class="comment-text">
+            "{{event.commentText}}"
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="!isLoading && filterForm.get('granularity')?.value !== 'minute'" class="aggregated-events">
+      <div *ngFor="let event of aggregatedEvents" class="event-item">
+        <div class="timestamp">{{formatTimestamp(event.periodStart, filterForm.get('granularity')?.value)}}</div>
+        <div class="event-content">
+          <div *ngIf="event.entersCount > 0" class="event-count">{{event.entersCount}} person{{event.entersCount > 1 ? 's' : ''}} entered</div>
+          <div *ngIf="event.leavesCount > 0" class="event-count">{{event.leavesCount}} left</div>
+          <div *ngIf="event.highFivesCount > 0" class="event-count">{{event.highFivesCount}} person{{event.highFivesCount > 1 ? 's' : ''}} high-fived {{event.highFivesCount}} other person{{event.highFivesCount > 1 ? 's' : ''}}</div>
+          <div *ngIf="event.commentsCount > 0" class="event-count">{{event.commentsCount}} comment{{event.commentsCount > 1 ? 's' : ''}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatRoom.API", "ChatRoom.API\ChatRoom.API.csproj", "{ABFEA8CA-CB5E-4EE0-930E-C47000AE8BCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatRoom.Tests", "ChatRoom.Tests\ChatRoom.Tests.csproj", "{2BB83C36-5201-48F3-AF84-BDCE5D0EDC1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABFEA8CA-CB5E-4EE0-930E-C47000AE8BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFEA8CA-CB5E-4EE0-930E-C47000AE8BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFEA8CA-CB5E-4EE0-930E-C47000AE8BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFEA8CA-CB5E-4EE0-930E-C47000AE8BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB83C36-5201-48F3-AF84-BDCE5D0EDC1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB83C36-5201-48F3-AF84-BDCE5D0EDC1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB83C36-5201-48F3-AF84-BDCE5D0EDC1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB83C36-5201-48F3-AF84-BDCE5D0EDC1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

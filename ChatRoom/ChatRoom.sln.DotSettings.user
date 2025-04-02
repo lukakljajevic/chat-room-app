@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AAsParametersAttribute_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003Ffeee524181384cb1964176e7f86347ce55200_003Fa9_003F8ec35a3b_003FAsParametersAttribute_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ADateTimeConverter_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003F2aa2d20ded026ee30425ea045dad0e3f7df8718edbcfbe979b929579fbb5aec_003FDateTimeConverter_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AInvalidEnumArgumentException_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003F2c6645c04066e7de9f388e46956a61d79d81d9b81faf5af6b58fed11745ae_003FInvalidEnumArgumentException_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=03dde98b_002D1727_002D4f1b_002Dbcf0_002Df9952208288d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ChatEventRepositoryTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::2BB83C36-5201-48F3-AF84-BDCE5D0EDC1A::net8.0::ChatRoom.Tests.ChatEventRepositoryTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2BB83C36-5201-48F3-AF84-BDCE5D0EDC1A::net8.0::ChatRoom.Tests.UnitOfWorkTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2BB83C36-5201-48F3-AF84-BDCE5D0EDC1A::net8.0::ChatRoom.Tests.ChatEventServiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2BB83C36-5201-48F3-AF84-BDCE5D0EDC1A::net8.0::ChatRoom.Tests.ChatEventsHandlerTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2BB83C36-5201-48F3-AF84-BDCE5D0EDC1A::net8.0::ChatRoom.Tests.ChatEventFactoryTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
